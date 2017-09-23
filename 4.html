@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SVG...</title>
+		<style>
+			body {
+			  background: black;
+			  color: white;
+			  text-align: center;
+			}
+
+			.ui { margin-bottom: 40px; }
+
+			.codepen-brand {
+			  display: block;
+			  width: 90%;
+			  margin: 0 auto;
+			  fill: none;
+			  stroke: white;
+			  stroke-linecap: round;
+			  stroke-linejoin: round;
+			  stroke-width: 1.2;
+			}
+		</style>
+	</head>
+	<body>
+		
+
+		<p class="ui">
+		  Stroke width
+		  <input class="stroke-width-range" type="range" min="0.3" max="3.6" value="1.2" step="0.1" />
+		  
+		  <span class="line-style-section">
+			<label>
+			  <input type="radio" name="line style" value="round" checked />
+			  Round
+			</label>
+			<label>
+			  <input type="radio" name="line style" value="square" />
+			  Square
+			</label>
+		  </span>
+
+		</p>
+
+		<svg class="codepen-brand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 19">
+		  <path class="codepen-brand__logo" d="M4,12l6,4,6-4V8L10,4,4,8Zm6,0v4m0-8V4M4,8l6,4,6-4m0,4L10,8,4,12"/>
+
+		  <path class="codepen-brand__wordmark" d="M52,10a4,4,0,0,1-4,4H45V6h3A4,4,0,0,1,52,10Zm16,1h4a2.5,2.5,0,0,0,0-5H68v8M36,6a4,4,0,1,0,4,4A4,4,0,0,0,36,6ZM63,6H57v8h6m-2-4H57M85,6H79v8h6m-2-4H79m11,4V6l7,8V6M27.83,7.17a4,4,0,1,0,0,5.66"/>
+
+		</svg>
+
+		<script>
+			var logo = document.querySelector('.codepen-brand__logo');
+			var wordmark = document.querySelector('.codepen-brand__wordmark');
+
+			var strokeWidthRange = document.querySelector('.stroke-width-range');
+			var lineStyleSection = document.querySelector('.line-style-section');
+
+			function updateStrokewidth() {
+			  logo.setAttribute( 'stroke-width', strokeWidthRange.value );
+			  wordmark.setAttribute( 'stroke-width', strokeWidthRange.value );
+			}
+
+			updateStrokewidth();
+
+			strokeWidthRange.oninput = updateStrokewidth;
+
+			lineStyleSection.onchange = function( event ) {
+			  var value = event.target.value;
+			  var join = value == 'round' ? 'round' : 'miter';
+			  logo.setAttribute( 'stroke-linejoin', join );
+			  wordmark.setAttribute( 'stroke-linejoin', join );
+			  wordmark.setAttribute( 'stroke-linecap', value );
+			}
+		</script>
+	
+	</body>
+</html>
