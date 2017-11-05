@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SVG with displacement...</title>
+		<style>body {
+  background: #333;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #999;
+  text-align: center;
+}
+
+svg {
+  margin: 5px;
+  border: 1px solid #555;
+}
+
+div {
+  width: 630px;
+  margin: 1.5em auto;
+}
+
+h4 {
+  font-size: 140%;
+  margin: 1.5em 0 0 0;
+  padding: 0;
+}</style>
+	</head>
+	<body>
+		<h4>SVG waves with feDisplacementMap</h4>
+<p>Working on Chrome, Opera, Firefox & Edge</p>
+<div>
+
+  <svg width="300" height="300">
+  <desc>First SVG: definitions and the radial gradient used for the feDisplacementMap filter</desc>
+  <defs>
+   
+ <filter id="f" primitiveUnits="objectBoundingBox">
+   <feImage result="pict2" xlink:href=""></feImage> 
+   <feDisplacementMap scale=".05" xChannelSelector="R" yChannelSelector="R" in2="pict2" in="SourceGraphic"></feDisplacementMap>
+</filter> 
+    
+    
+<pattern id="imageFill" width="1" height="1"
+viewBox="0 0 300 300" >
+<image id="ripples" width="300" height="300"
+xlink:href="" />
+</pattern>
+</defs> 
+    
+<rect id="witness" width="300" height="300" fill="url(#imageFill)" ></rect>  
+</svg>
+
+  <svg width="300" height="300">
+  <desc>Forth SVG: image affected by the feDisplacementMap filter</desc>
+<image id="Darwin" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/beagle400.jpg" width="300" height="300" filter="url(#f)"></image> 
+</svg>
+
+</div>
+	
+	<script>
+	const filterFeImage = document.querySelector("#f feImage");
+const xlink = "http://www.w3.org/1999/xlink";
+
+let displacement = 0;
+let speed = 0.2;
+
+function setXlinkHref() {
+  /*
+  <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width="300" height="300">
+  <defs>
+    <radialGradient id="rg" r=".9"> 
+  */
+  let xlinkHref =
+    "data:image/svg+xml;utf8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='300' height='300'%3E%3Cdefs%3E%3CradialGradient id='rg' r='.9'%3E";
+  /*
+      <stop offset='0%' stop-color='#f00'></stop>
+      <stop offset='10% 'stop-color='#000'></stop>
+      <stop offset='20%' stop-color='#f00'></stop>
+      <stop offset='30%' stop-color='#000'></stop>
+      <stop offset='40%' stop-color='#f00'></stop>
+      <stop offset='50%' stop-color='#000'></stop>
+      <stop offset='60%' stop-color='#f00'></stop>
+      <stop offset='70%' stop-color='#000'></stop>
+      <stop offset='80% 'stop-color='#f00'></stop>
+      <stop offset='90%' stop-color='#f00'></stop> 
+      <stop offset='100%' stop-color='#f00'></stop>
+*/
+  for (var i = 0; i < 11; i++) {
+    xlinkHref += `%3Cstop 
+                offset='${(i - 2) * 10 + displacement}%25' 
+                stop%2Dcolor='%23${i % 2 == 0 ? "f00" : "000"}'%3E%3C/stop%3E`;
+  }
+
+  /*
+</radialGradient> 
+<rect id="witness" width="300" height="300" fill="url(#rg)"></rect>*/
+
+  xlinkHref +=
+    "%3C/radialGradient%3E%3C/defs%3E%3Crect id='witness' width='300' height='300' fill='url(%23rg)'%3E%3C/rect%3E%3C/svg%3E";
+
+  return xlinkHref;
+}
+
+function AnimateOffset() {
+  let xlinkHref = setXlinkHref();
+  filterFeImage.setAttributeNS(xlink, "href", xlinkHref);
+  ripples.setAttributeNS(xlink, "href", xlinkHref);
+
+  if (displacement <= 20) {
+    displacement += speed;
+  } else {
+    displacement = 0;
+  }
+
+  window.requestAnimationFrame(AnimateOffset);
+}
+
+window.requestAnimationFrame(AnimateOffset);
+
+</script>
+	</body>
+</html>
