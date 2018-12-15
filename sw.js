@@ -12,17 +12,17 @@ self.addEventListener('install', function(e) {
       // If the request for any of these resources fails, _none_ of the resources will be
       // added to the cache.
       return cache.addAll([
-        '/',
+        '/abhyasi/',
         // HTML
-        '/index.html',
+        '/abhyasi/index.html',
         // MANIFEST
         '/manifest.json',
         // CSS
-        '/css/app.a87986ad.css',
-        '/css/chunk-vendors.e178fcdd.css',
+        '/abhyasi/css/app.a87986ad.css',
+        '/abhyasi/css/chunk-vendors.e178fcdd.css',
         // JS
-        '/js/app.88903164.js',
-        '/js/chunk-vendors.a277d13e.js'
+        '/abhyasi/js/app.88903164.js',
+        '/abhyasi/js/chunk-vendors.a277d13e.js'
       ]);
     })
   );
@@ -30,7 +30,6 @@ self.addEventListener('install', function(e) {
 
 // 2. Intercept requests and return the cached version instead
 self.addEventListener('fetch', function(e) {
-  console.log(e);
   e.respondWith(
     // check if this file exists in the cache
     caches.match(e.request)
