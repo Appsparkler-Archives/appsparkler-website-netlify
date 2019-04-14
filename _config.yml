@@ -1,0 +1,19 @@
+title:             appsparkler
+email:             akash@appsparkler.com
+description:       Sparkling apps...
+author:            Start Bootstrap
+baseurl:           "/"
+url:               "http://appsparkler.com"
+
+# Social Profiles
+twitter_username:  isDeveloping
+github_username:   appsparkler
+facebook_username: appsparkler
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
