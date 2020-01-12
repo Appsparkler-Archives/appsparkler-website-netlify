@@ -28,7 +28,7 @@ twitter_username: isDeveloping
 github_username:  appsparkler
 
 # Build settings
-theme: minima
+theme: appsparkler
 plugins:
   - jekyll-feed
 
