@@ -3,7 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Appsparkler Home
 ---
 ## Hello World...
 
-# Posts:
+Appsparkler is under construction.
