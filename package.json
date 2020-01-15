@@ -1,0 +1,11 @@
+{
+  "name": "appsparkler.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:appsparkler/appsparkler.github.io.git",
+  "author": "Akash <subs@appsparkler.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "bundle exec jekyll serve --livereload --watch"
+  }
+}
