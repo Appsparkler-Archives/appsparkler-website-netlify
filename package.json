@@ -7,6 +7,6 @@
   "license": "MIT",
   "scripts": {
     "start": "bundle exec jekyll serve --livereload --watch",
-    "deploy":"bundle exec jekyll build; git push -m 'auto-deploy with yarn' "
+    "deploy":"bundle exec jekyll build; git push origin master"
   }
 }
