@@ -36,7 +36,8 @@ categories: study git
 - VIEW difference of a file in working-tree with another commit - `git diff <commitID> -- <file/path>`
   - For ex. `git diff HEAD -- package.json`
 - VIEW difference of a file between two commits - `git diff [options] <commitID1> <commitID2> -- <path/to/file>`
-- VIED difference with `summary` and `stat` - `git diff --stat --summary <id1> [<id2>]`
+- VIEW difference with `summary` and `stat` - `git diff --stat --summary <id1> [<id2>]`
+- VIEW only name of files as diff - `git diff --name-only HEAD`.  [More here](https://stackoverflow.com/questions/1552340/how-to-list-only-the-file-names-that-changed-between-two-commits)
 
 ### FETCH
 - FETCH a branch from remote - `git fetch <origin> <branch>`
