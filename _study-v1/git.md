@@ -42,6 +42,11 @@ categories: study git
 ### FETCH
 - FETCH a branch from remote - `git fetch <origin> <branch>`
 
+### LOG
+- LOG out previous commits - `git log --pretty=format:"%h - %s"`
+  - More details about formatting here : [Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+
+
 ### PUSH
 - PUSH to a remote with different name: `git push <origin> HEAD:<remote-branch-name>`
   - For ex. `git push pinned-origin HEAD:master`
