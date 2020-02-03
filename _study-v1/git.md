@@ -20,6 +20,7 @@ categories: study git
   - For ex. `git checkout 'stash@{1} README.md`
 - CHECKOUT an orphan branch - `git checkout --orphan <temp/branch/name>`
 - CHECKOUT few files from a different branch - `git checkout <different-branch> -- <file1> <file2>` :star:
+- DISCARDING changes to a file - `git chekckout -- <file1> <file2>`
 
 ### CLONE
 - CLONE a single-branch - `git clone <url> <name> -b <branch> --single-branch`
