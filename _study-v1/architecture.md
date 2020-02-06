@@ -31,3 +31,13 @@ Handling time as per the time-zone is one of the essential aspects of project ma
     moment(expiryDate).subtract(moment().offsetUTC(), 'minutes').valueOf()
     // here expiryDate is coming from the server (which will be as per UTC); thus we offset it to get the local time.
   ```
+### CSS-hover-after
+ ```sass
+div
+  :after
+     background-color: green
+     opacity: 1
+  :after:hover
+     opacity: .7
+   
+```
