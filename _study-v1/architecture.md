@@ -52,4 +52,8 @@ doThis({expiryDate, effectiveDate}) // Better structure (can be accessed in any 
 doThis(expiryDate, effectiveDate) // Will have to be accessed from the available order
 ```
 
-## P
+## Work with `&&` and `||` to set values:
+```javascript
+ const effectiveTime = instance && instance.effectiveTime; // will set the last available value if the previous values are available (for ex. will set instance.effectiveTime if instance is available.
+ const expiryTime = selectedInstance.expiryTime || instance.expiryTime // will set the first available value.  For ex. will set the selecedInstance.expiryTime if it is available.  ONLY if it is not available it will set the instance.expirtyTime
+```
