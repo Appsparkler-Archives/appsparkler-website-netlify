@@ -59,7 +59,7 @@ doThis(expiryDate, effectiveDate) // Will have to be accessed from the available
 ```
 
 ## Destructure within the `curly-braces`
-```
+```javascript
 function doSomething(state) {
   const {data, username, email} = state;
   doSomethingElse(state) // state object is readily availble
@@ -67,5 +67,31 @@ function doSomething(state) {
 
 function doSomething({data, username, email}) {
   // this looks shorter initially; however, now you dont have access to the component `state` object
+}
+```
+
+## Pass as few arguments as possible
+```javascript
+// better approach
+function myHook() {
+  const [month, setMonth] = React.useState()
+  const [setDay, setDay] = Reactt.useState()
+  const [setEvent, setEvent] = React.useState()
+  const states = {
+    month, setMonth,
+    setDay, setDay,
+    setEvent, setEvent
+  }
+  setEventOnDay(states); // the setEventOnDay can utilize what it needs
+  setMonthWithDay(states); // the setMonthWithDay can utilize what it needs
+}
+
+// previous approach
+function myHook() {
+  const [month, setMonth] = React.useState()
+  const [setDay, setDay] = Reactt.useState()
+  const [setEvent, setEvent] = React.useState()
+  setEventOnDay({setEvent, event, day, setDay})
+  setMonthWithDay({setDay, day, setMonth});
 }
 ```
