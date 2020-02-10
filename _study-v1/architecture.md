@@ -57,3 +57,15 @@ doThis(expiryDate, effectiveDate) // Will have to be accessed from the available
  const effectiveTime = instance && instance.effectiveTime; // will set the last available value if the previous values are available (for ex. will set instance.effectiveTime if instance is available.
  const expiryTime = selectedInstance.expiryTime || instance.expiryTime // will set the first available value.  For ex. will set the selecedInstance.expiryTime if it is available.  ONLY if it is not available it will set the instance.expirtyTime
 ```
+
+## Destructure within the `curly-braces`
+```
+function doSomething(state) {
+  const {data, username, email} = state;
+  doSomethingElse(state) // state object is readily availble
+}
+
+function doSomething({data, username, email}) {
+  // this looks shorter initially; however, now you dont have access to the component `state` object
+}
+```
