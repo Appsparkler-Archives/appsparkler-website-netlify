@@ -41,3 +41,15 @@ div
      opacity: .7
    
 ```
+
+
+### Javascript Notes
+## Pass `params` in curly braces and work with `structuring` and `destructuring`
+
+```javascript
+doThis({expiryDate, effectiveDate}) // Better structure (can be accessed in any order
+
+doThis(expiryDate, effectiveDate) // Will have to be accessed from the available order
+```
+
+## P
