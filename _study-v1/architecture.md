@@ -95,3 +95,19 @@ function myHook() {
   setMonthWithDay({setDay, day, setMonth});
 }
 ```
+
+
+
+## CSS
+## SVG `height` and `width` and `fill`:
+The ideal way to give correct dimensions to `SVG` is with wrapping it.  For ex:
+```sass
+span.svg-wrapper
+  height: 16px
+  width: 16px
+  svg
+    height: 100%
+    width: 100%
+    path
+      fill: blue
+```
