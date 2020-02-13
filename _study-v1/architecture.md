@@ -99,7 +99,7 @@ function myHook() {
 
 
 ## CSS
-## SVG `height` and `width` and `fill`:
+## SVG `height`, `width` and `fill`:
 The ideal way to give correct dimensions to `SVG` is with wrapping it.  For ex:
 ```sass
 span.svg-wrapper
