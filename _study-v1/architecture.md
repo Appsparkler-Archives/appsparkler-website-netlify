@@ -44,6 +44,13 @@ div
 
 
 ### Javascript Notes
+## The called function and the defined function should ideally have the same arguments unless they are being called with `call`, `apply` or `bind`
+```javascript
+function doThis({states, hooks}) {}
+doThis({state, hooks});
+// insted of
+doThis({state})
+```
 ## Pass `params` in curly braces and work with `structuring` and `destructuring`
 
 ```javascript
