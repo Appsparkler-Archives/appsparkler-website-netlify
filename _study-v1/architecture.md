@@ -44,6 +44,17 @@ div
 
 
 ### Javascript Notes
+## Super Functions:
+Functions can achieve a lot of things which may be seemingly un-achievable initially.  For ex., lets say we want a React component to consume some data which are not passed through props.  How do we do that - Functions returning functions :smile:
+
+```javascript
+const getComponent = (nonProps) => (props) => {
+  console.log(nonProps);
+  console.log(props);
+}
+const component = getComponent(nonProps)
+```
+
 ## The called function and the defined function should ideally have the same arguments unless they are being called with `call`, `apply` or `bind`
 ```javascript
 function doThis({states, hooks}) {}
