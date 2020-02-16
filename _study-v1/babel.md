@@ -22,3 +22,11 @@ categories: study babel
       }], 'preset-react']
     }
     ```
+
+# Issue Resolution
+- If you face an issue with `regeneratorRuntime is not defined/undefined`; install the `@babel/plugin-transform-runtime` plugin and then add the following options in `.babelrc.js`
+```javascript
+//...
+['@babel/plugin-transform-runtime`, {regenerator: true}]
+//...
+```
