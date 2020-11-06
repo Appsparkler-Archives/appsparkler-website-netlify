@@ -26,7 +26,7 @@ Example Data:
 SELECT t.*
 FROM `<bucketName>` t
 UNNEST t.primaryTags primaryTag
-WHERE t.id="<id-on-t>" AND primaryTag="<id-on-a-primary-tag>"
+WHERE t.id="<id-on-t>" AND primaryTag.id="<id-on-a-primary-tag>"
 ```
 
 ### DELETE items
