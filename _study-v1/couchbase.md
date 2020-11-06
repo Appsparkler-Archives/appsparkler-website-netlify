@@ -8,7 +8,7 @@ tags: Couchbase
 ```sql
 SELECT t.*
 FROM `<bucketname>` t
-WHERE id
+WHERE t.id
 ```
 
 ### GET deep nested results with `UNNEST`:
