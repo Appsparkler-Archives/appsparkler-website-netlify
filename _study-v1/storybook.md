@@ -19,3 +19,16 @@ export const parameters = {
 };
 ```
 This will pro-actively configure the `action` for all handlers that start with `on`  - for ex. `onClick`, `onTimezoneUpdated`, `onOpen,` etc.
+
+## Developing Workflow
+1. Build `components`
+1. Build `stories` from `components`
+1. Setup `templates` for `stories`
+1. Export all `variants` for the component with `templates`
+1. Import the `variants` in `stories` of parent-components to setup variants of other stories.
+1. Ensure snapshots for all stories with `@storybook/addons-storyshots`
+1. Ensure `actions` are pre-configured so that we don't have to include events for components.
+
+
+## `args`
+I think of `args` as building blocks for stories - they form the `data-chain` from the root of the application until its extreme periphery.
