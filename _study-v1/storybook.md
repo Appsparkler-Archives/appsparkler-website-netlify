@@ -25,7 +25,7 @@ This will pro-actively configure the `action` for all handlers that start with `
 1. Build `stories` from `components`
 1. Setup `templates` for `stories`
 1. Export all `variants` for the component with `templates`
-1. Import the `variants` in `stories` of parent-components to setup variants of other stories.
+1. Import the `variants` in `stories` of parent-components to setup `parent-component-variants`.
 1. Ensure snapshots for all stories with `@storybook/addons-storyshots`
 1. Ensure `actions` are pre-configured so that we don't have to include events for components.
 
