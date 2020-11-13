@@ -35,3 +35,16 @@ DELETE
 FROM `tesla-cms`
 WHERE id
 ```
+
+### UPDATING a nested object
+```sql
+UPDATE `<bucket-name>`
+
+SET nestedItem.status="new-status"
+
+FOR nestedItem in items
+ WHEN nestedItem.id IN ["item-1-id","item-2-id"]
+END
+
+WHERE type="abcd"
+```
