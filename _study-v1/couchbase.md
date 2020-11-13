@@ -48,3 +48,16 @@ END
 
 WHERE type="abcd"
 ```
+
+### SELECT
+This query utilizes a dummy scan to generate the projection:
+```sql
+SELECT
+  "USER::001" AS _k,
+  {
+    "firstName": "John",
+    "lastName": "Smith",
+    "id": "001",
+    "type": "user"
+  } AS _v
+```
