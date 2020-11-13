@@ -61,3 +61,9 @@ SELECT
     "type": "user"
   } AS _v
 ```
+
+### CREATING PRIMARY INDEX
+This query will create a `primary-index` on bucket named `default`.
+```sql
+CREATE PRIMARY INDEX `default-primary-index` ON default
+```
