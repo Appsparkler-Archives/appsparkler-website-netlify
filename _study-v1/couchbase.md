@@ -67,3 +67,30 @@ This query will create a `primary-index` on bucket named `default`.
 ```sql
 CREATE PRIMARY INDEX `default-primary-index` ON default
 ```
+
+### UPDATING multiple documents
+The `WHERE pageOrFragment.id IN ["id-1", "id-2", "id-3"]` will return multiple documents which will get updated.
+```sql
+UPDATE `tesla-cms` pageOrFragment
+SET pageOrFragment.status={"isPagePublished": true, "timeStamp": 00001}, pageOrFragment.statusModifedBy={"firstName": "ABC", "lastName": "DEF"}
+WHERE pageOrFragment.id IN ["id-1", "id-2", "id-3"]
+```
+
+### RETURNING after done
+We can also return the results after an operation such as `UPDATE`:
+
+```sql
+UPDATE `tesla-cms` item
+SET item.isPublished=true
+WHERE item.id IN ["id-1", "id-2", "id-3"]
+RETURNING item.*
+```
+
+### LIMIT 
+We can limit the results - this is good to improve performance:
+```sql
+SELECT item.*
+FROM `tesla-cms`
+WHERE id
+LIMIT 1
+```
