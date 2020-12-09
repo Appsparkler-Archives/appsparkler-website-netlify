@@ -4,6 +4,10 @@ title:  Docker
 date:   2019-10-18 12:40:47 -0500
 categories: study docker
 ---
+
+### Pulling an image
+- `docker pull <image>[@tagname]` for  ex. `docker pull couchbase@latest`
+
 ### Docker volume
 - REMOVE all volumes - `docker volume rm $(docker volume ls -q)`
 
