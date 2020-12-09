@@ -17,5 +17,12 @@ categories: study docker
   2. ADD `entrypoint` key under any service pointing to the file added in 1.
   3. [Stackoverflow Reference Link](https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands)
 
+## `Exec`
 ### `SH` into container
 - `docker ps exec -it <containerName> sh`
+
+## Volume
+### Mapping a volume
+`docker run -v <path-on-local>:<path-on-container> -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
+
+For ex: `docker run -v ~/Documents/projects/lowes/tesla:/tesla -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
