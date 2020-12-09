@@ -94,3 +94,11 @@ FROM `tesla-cms`
 WHERE id
 LIMIT 1
 ```
+
+
+# `CBIMPORT`
+
+### Importing data with `JSON`:
+`cbimport json -d <file-path> -b <bucket-name> -u <username> -p <password> -c <cluster> -f list --generate-key %id%`
+
+For ex: `cbimport json -d file://dev-data.json -b tesla-cms -u dbuser -p dbuser -c localhost:8091 -f list --generate-key %id%`
