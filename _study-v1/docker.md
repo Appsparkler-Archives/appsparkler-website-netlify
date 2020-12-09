@@ -12,3 +12,6 @@ categories: study docker
   1. ADD a file to serve as an **entrypoint** - ex. `docker-entrypoint.sh`
   2. ADD `entrypoint` key under any service pointing to the file added in 1.
   3. [Stackoverflow Reference Link](https://stackoverflow.com/questions/30063907/using-docker-compose-how-to-execute-multiple-commands)
+
+### `SH` into container
+- `docker ps exec -it <containerName> sh`
