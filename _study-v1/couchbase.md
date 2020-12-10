@@ -94,7 +94,17 @@ FROM `tesla-cms`
 WHERE id
 LIMIT 1
 ```
+# TTL document
 
+```sql
+INSERT INTO `tesla-cms` (key, value) 
+VALUES (
+  "publish:123", 
+  { "id": "publish:123" }, 
+  { "expiration": 2 }
+) 
+RETURNING `tesla-cms`.*
+```
 
 # `CBIMPORT`
 
