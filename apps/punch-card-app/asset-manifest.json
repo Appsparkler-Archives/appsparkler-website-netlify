@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/apps/punch-card-app/static/css/main.ecb925fe.chunk.css",
-    "main.js": "/apps/punch-card-app/static/js/main.f3520d5c.chunk.js",
-    "main.js.map": "/apps/punch-card-app/static/js/main.f3520d5c.chunk.js.map",
+    "main.js": "/apps/punch-card-app/static/js/main.ad63235c.chunk.js",
+    "main.js.map": "/apps/punch-card-app/static/js/main.ad63235c.chunk.js.map",
     "runtime-main.js": "/apps/punch-card-app/static/js/runtime-main.4cd29847.js",
     "runtime-main.js.map": "/apps/punch-card-app/static/js/runtime-main.4cd29847.js.map",
     "static/css/2.39bb05ab.chunk.css": "/apps/punch-card-app/static/css/2.39bb05ab.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.39bb05ab.chunk.css",
     "static/js/2.a50f3712.chunk.js",
     "static/css/main.ecb925fe.chunk.css",
-    "static/js/main.f3520d5c.chunk.js"
+    "static/js/main.ad63235c.chunk.js"
   ]
 }
