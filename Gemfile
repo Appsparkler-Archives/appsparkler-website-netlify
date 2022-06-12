@@ -13,8 +13,8 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-# gem "jekyll"
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll"
+# gem "github-pages", group: :jekyll_plugins
 # gem "minimal-mistakes-jekyll"
 gem "minimal-mistakes-jekyll", :github => "mmistakes/minimal-mistakes"
 
