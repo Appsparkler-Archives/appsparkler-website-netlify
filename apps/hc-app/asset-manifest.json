@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/apps/hc-app/static/css/main.e6c13ad2.css",
+    "main.js": "/apps/hc-app/static/js/main.cae44814.js",
+    "static/js/787.cbdd0f44.chunk.js": "/apps/hc-app/static/js/787.cbdd0f44.chunk.js",
+    "index.html": "/apps/hc-app/index.html",
+    "main.e6c13ad2.css.map": "/apps/hc-app/static/css/main.e6c13ad2.css.map",
+    "main.cae44814.js.map": "/apps/hc-app/static/js/main.cae44814.js.map",
+    "787.cbdd0f44.chunk.js.map": "/apps/hc-app/static/js/787.cbdd0f44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.cae44814.js"
+  ]
+}

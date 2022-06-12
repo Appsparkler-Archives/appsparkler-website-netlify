@@ -1,8 +1,17 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Heartful Communication"
+    url: /apps/hc-app
+  - title: "Rent Receipt Printer"
+    url: /apps/rent-receipt-printer
+  - title: "Punch Card App"
+    url: /apps/punch-card-app
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
+  #   url: /about
+  # - title: "Contact"
+  #   url: /contact
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
@@ -10,3 +19,13 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  # - title: "Categories"
+  #   url: /categories/
+  # - title: "Tags"
+  #   url: /tags/
+  # - title: "Pages"
+  #   url: /page-archive/
+  # - title: "Collections"
+  #   url: /collection-archive/
+  # - title: "External Link"
+  #   url: https://google.com

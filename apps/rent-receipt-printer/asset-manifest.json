@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/apps/rent-receipt-printer/static/css/main.6139f5b9.chunk.css",
+    "main.js": "/apps/rent-receipt-printer/static/js/main.a7f8414d.chunk.js",
+    "main.js.map": "/apps/rent-receipt-printer/static/js/main.a7f8414d.chunk.js.map",
+    "runtime-main.js": "/apps/rent-receipt-printer/static/js/runtime-main.39d8c4f0.js",
+    "runtime-main.js.map": "/apps/rent-receipt-printer/static/js/runtime-main.39d8c4f0.js.map",
+    "static/css/2.0f920b97.chunk.css": "/apps/rent-receipt-printer/static/css/2.0f920b97.chunk.css",
+    "static/js/2.6f0da1a9.chunk.js": "/apps/rent-receipt-printer/static/js/2.6f0da1a9.chunk.js",
+    "static/js/2.6f0da1a9.chunk.js.map": "/apps/rent-receipt-printer/static/js/2.6f0da1a9.chunk.js.map",
+    "static/js/3.314a6f01.chunk.js": "/apps/rent-receipt-printer/static/js/3.314a6f01.chunk.js",
+    "static/js/3.314a6f01.chunk.js.map": "/apps/rent-receipt-printer/static/js/3.314a6f01.chunk.js.map",
+    "index.html": "/apps/rent-receipt-printer/index.html",
+    "static/css/2.0f920b97.chunk.css.map": "/apps/rent-receipt-printer/static/css/2.0f920b97.chunk.css.map",
+    "static/css/main.6139f5b9.chunk.css.map": "/apps/rent-receipt-printer/static/css/main.6139f5b9.chunk.css.map",
+    "static/js/2.6f0da1a9.chunk.js.LICENSE.txt": "/apps/rent-receipt-printer/static/js/2.6f0da1a9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39d8c4f0.js",
+    "static/css/2.0f920b97.chunk.css",
+    "static/js/2.6f0da1a9.chunk.js",
+    "static/css/main.6139f5b9.chunk.css",
+    "static/js/main.a7f8414d.chunk.js"
+  ]
+}

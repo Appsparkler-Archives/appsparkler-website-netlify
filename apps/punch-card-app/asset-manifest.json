@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/apps/punch-card-app/static/css/main.ecb925fe.chunk.css",
+    "main.js": "/apps/punch-card-app/static/js/main.86b97627.chunk.js",
+    "main.js.map": "/apps/punch-card-app/static/js/main.86b97627.chunk.js.map",
+    "runtime-main.js": "/apps/punch-card-app/static/js/runtime-main.4cd29847.js",
+    "runtime-main.js.map": "/apps/punch-card-app/static/js/runtime-main.4cd29847.js.map",
+    "static/css/2.39bb05ab.chunk.css": "/apps/punch-card-app/static/css/2.39bb05ab.chunk.css",
+    "static/js/2.85092737.chunk.js": "/apps/punch-card-app/static/js/2.85092737.chunk.js",
+    "static/js/2.85092737.chunk.js.map": "/apps/punch-card-app/static/js/2.85092737.chunk.js.map",
+    "static/js/3.66b76f87.chunk.js": "/apps/punch-card-app/static/js/3.66b76f87.chunk.js",
+    "static/js/3.66b76f87.chunk.js.map": "/apps/punch-card-app/static/js/3.66b76f87.chunk.js.map",
+    "index.html": "/apps/punch-card-app/index.html",
+    "static/css/2.39bb05ab.chunk.css.map": "/apps/punch-card-app/static/css/2.39bb05ab.chunk.css.map",
+    "static/css/main.ecb925fe.chunk.css.map": "/apps/punch-card-app/static/css/main.ecb925fe.chunk.css.map",
+    "static/js/2.85092737.chunk.js.LICENSE.txt": "/apps/punch-card-app/static/js/2.85092737.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cd29847.js",
+    "static/css/2.39bb05ab.chunk.css",
+    "static/js/2.85092737.chunk.js",
+    "static/css/main.ecb925fe.chunk.css",
+    "static/js/main.86b97627.chunk.js"
+  ]
+}
